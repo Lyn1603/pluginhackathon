@@ -7,7 +7,7 @@ document.addEventListener('mouseup', (event) => {
         //récupérer l'id du texte sélectionné
         const targetElement = event.target;
         const id = targetElement.id;
-        //récupération de l'id de la balise sélectionné
+
         popUp(id);
         //Target du bouton
         const targetBtn = document.getElementById('popupBtn');
@@ -27,10 +27,10 @@ document.addEventListener('mouseup', (event) => {
 
 //fonction pour afficher la pop up 
 function popUp (selectedId) {
-    console.log(selectedId);
     //donnez la classe a la target du selectedText
     const targetElement = document.getElementById(selectedId);
     targetElement.classList.add("popup");
+    
     //affichage de la pop up
     const spanBtn = document.createElement("span");
     spanBtn.innerHTML = '<button type="button" id="popupBtn"><img src="https://www.svgrepo.com/show/521855/sound.svg" alt="" srcset="" id="imgBtn"/></button>';
