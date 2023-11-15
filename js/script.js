@@ -1,23 +1,4 @@
 document.addEventListener('mouseup', (event) => {
-
-//appel d'api 
-const url = 'https://play.ht/api/v2/tts/stream'
-const options = {
-    method: 'POST',
-    headers: {
-      accept: 'audio/mpeg',
-      'content-type': 'application/json',
-      AUTHORIZATION: 'eBSxpzLdEtTa733qYlZwq85EfHS2',
-      'X-USER-ID': '2d7f16875a6b4de9ad1c8f3cc1b10bf0'
-    },
-    body: JSON.stringify({
-      text: 'Hey there, I am calling in regards to the car you enquired yesterday."',
-      voice: 'larry',
-      quality: 'draft',
-      output_format: 'mp3'
-    })
-  };
-
     
   //recuperation de la sélection
   const selectedText = window.getSelection().toString();
@@ -36,12 +17,7 @@ const options = {
       
       //Verif si le bouton existe bien + event si bouton appuyé
       if (targetBtn){
-          targetBtn.addEventListener('mousedown',() => {
-            fetch(url, options)
-            .then(res => res.json())
-            .then(json => console.log(json))
-            .catch(err => console.error('error:' + err));
-          })
+          
       } else {
           console.log('pas de bouton')
       }
@@ -66,4 +42,21 @@ function popUp (selectedId) {
   popup.classList.toggle("show");
 }
 
+//appel d'api 
+const url = 'https://play.ht/api/v2/tts/stream'
+const options = {
+    method: 'POST',
+    headers: {
+      accept: 'audio/mpeg',
+      'content-type': 'application/json',
+      AUTHORIZATION: 'eBSxpzLdEtTa733qYlZwq85EfHS2',
+      'X-USER-ID': '2d7f16875a6b4de9ad1c8f3cc1b10bf0'
+    },
+    body: JSON.stringify({
+      text: 'Hey there, I am calling in regards to the car you enquired yesterday."',
+      voice: 'larry',
+      quality: 'draft',
+      output_format: 'mp3'
+    })
+  };
 
