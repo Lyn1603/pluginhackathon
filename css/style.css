@@ -5,12 +5,12 @@
 
 .popup .popuptext {
   visibility: hidden;
-  width: 160px;
-  background-color: #555;
+  width: 3rem;
+  background-color: #efefef;
   color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 8px 0;
+  padding: 4px 0;
   position: absolute;
   z-index: 1;
   bottom: 125%;
@@ -26,7 +26,7 @@
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: #efefef transparent transparent ;
 }
 
 .popup .show {
@@ -46,4 +46,9 @@
 }
 #imgBtn{
   width: 1.2rem;
+}
+
+#popupBtn{
+  border: none;
+  cursor: pointer;
 }
