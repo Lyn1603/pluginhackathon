@@ -1,0 +1,3 @@
+# Extension de Retranscription Vocale
+
+Bienvenue sur notre extension de Retranscription Vocale ! Cette solution simple et légère utilise l'API de ResponsiveVoice (https://responsivevoice.org/api/) pour convertir rapidement du texte en discours vocal. Intégrez facilement cette fonctionnalité dans votre projet en appelant la fonction `retranscrire_texte(texte)`. Vous pouvez personnaliser la voix en choisissant parmi une variété d'options disponibles. Que vous souhaitiez améliorer l'accessibilité de votre application ou créer des expériences audio uniques, notre extension vous offre une solution efficace. Téléchargez, intégrez et offrez une expérience vocale exceptionnelle à vos utilisateurs dès maintenant !
