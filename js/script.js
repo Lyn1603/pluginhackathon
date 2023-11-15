@@ -1,16 +1,20 @@
 document.addEventListener('mouseup', (event) => {
+    
     //recuperation de la sélection
     const selectedText = window.getSelection().toString();
 
     //Vérification du text selectionner 
     if (selectedText !== '') {
+        
         //récupérer l'id du texte sélectionné
         const targetElement = event.target;
         const id = targetElement.id;
 
         popUp(id);
+        
         //Target du bouton
         const targetBtn = document.getElementById('popupBtn');
+        
         //Verif si le bouton existe bien + event si bouton appuyé
         if (targetBtn){
             targetBtn.addEventListener('mousedown',() => {
